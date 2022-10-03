@@ -5,14 +5,14 @@
 
 typedef struct {
     uint8_t *buffer;
-    uint32_t _size;
-    uint32_t _head = 0, _tail = 0;
-    size_t _dataCnt = 0;
+    uint32_t size;
+    uint32_t head = 0, tail = 0;
+    size_t dataCnt = 0;
 } ring_buffer_t;
 
 class myFIFOBufferClass {
    private:
-    ring_buffer_t buf;
+    ring_buffer_t _buf;
 
    public:
     void
